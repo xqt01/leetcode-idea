@@ -29,5 +29,5 @@ echo "" >> "${file_name}"
 echo "public class ${CLASS_NAME} {}" >> "${file_name}"
 
 echo ""
-echo "|${QUESTION_ID}|${QUESTION_TITLE}|[Java](./algorithm/java/${package_name}/${file_name})|${QUESTION_DIFFICULTY}|"
+echo "|${QUESTION_ID}|[${QUESTION_TITLE}]($1)|[Java](./algorithm/java/${package_name}/${file_name})|${QUESTION_DIFFICULTY}|"
 echo "" 
