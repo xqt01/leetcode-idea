@@ -15,6 +15,7 @@ When utilizing a stack/queue structure, the initial determination is whether to 
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Java](./algorithm/java/q114_flatten_binary_tree_to_linked_list/FlattenBinaryTreeToLinkedList.java)|Medium|
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Java](./algorithm/java/q116_populating_next_right_pointers_in_each_node/PopulatingNextRightPointersInEachNode.java)|Medium|
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[Java](./algorithm/java/q654_maximum_binary_tree/MaximumBinaryTree.java)|Medium|
-|105|[ConstructBinaryTreeFromPreorderAndInorderTraversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[Java](./algorithm/java/q_construct_binary_tree_from_preorder_and_inorder_traversal/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)|Medium|
+|105|[ConstructBinaryTreeFromPreorderAndInorderTraversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[Java](./algorithm/java/q105_construct_binary_tree_from_preorder_and_inorder_traversal/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)|Medium|
+|106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|[Java](./algorithm/java/q106_construct_binary_tree_from_inorder_and_postorder_traversal/ConstructBinaryTreeFromInorderAndPostorderTraversal.java)|Medium|
 
 ## BST
