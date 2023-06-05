@@ -17,5 +17,7 @@ When utilizing a stack/queue structure, the initial determination is whether to 
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[Java](./algorithm/java/q654_maximum_binary_tree/MaximumBinaryTree.java)|Medium|
 |105|[ConstructBinaryTreeFromPreorderAndInorderTraversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[Java](./algorithm/java/q105_construct_binary_tree_from_preorder_and_inorder_traversal/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)|Medium|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|[Java](./algorithm/java/q106_construct_binary_tree_from_inorder_and_postorder_traversal/ConstructBinaryTreeFromInorderAndPostorderTraversal.java)|Medium|
+|652|[Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)|[Java](./algorithm/java/q652_find_duplicate_subtrees/FindDuplicateSubtrees.java)|Medium|
+|236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Java](./algorithm/java/q236_lowest_common_ancestor_of_a_binary_tree/LowestCommonAncestorOfABinaryTree.java)|Medium|
 
 ## BST
