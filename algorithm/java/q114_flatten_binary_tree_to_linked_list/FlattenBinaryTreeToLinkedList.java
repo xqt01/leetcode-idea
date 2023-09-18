@@ -19,17 +19,16 @@ public class FlattenBinaryTreeToLinkedList {}
 class Solution {
     public void flatten(TreeNode root) {
         if (root == null) {
-           return; 
+            return;
         }
         flatten(root.left);
         flatten(root.right);
-        TreeNode tmp = root.right;
+        TreeNode previousRight = root.right;
         root.right = root.left;
         root.left = null;
-        TreeNode node = root;
-        while (node.right != null) {
-            node = node.right;
+        while (root.right != null) {
+            root = root.right;
         }
-        node.right = tmp;
+        root.right = previousRight;
     }
 }
