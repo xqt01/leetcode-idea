@@ -25,19 +25,15 @@ class Solution {
         if (start > end) {
             return null;
         }
-        int maxIndex = start;
-        int maxValue = nums[maxIndex];
-        int index = start;
-        while (index <= end) {
-            if (nums[index] > maxValue) {
-                maxIndex = index;
-                maxValue = nums[index];
+        int indexOfMax = start;
+        for (int i = start; i <= end; i++) {
+            if (nums[i] > nums[indexOfMax]) {
+                indexOfMax = i;
             }
-            index++;
         }
-        TreeNode root = new TreeNode(maxValue);
-        root.left = constructMaximumBinaryTree(nums, start, maxIndex - 1);
-        root.right = constructMaximumBinaryTree(nums, maxIndex + 1, end);
+        TreeNode root = new TreeNode(nums[indexOfMax]);
+        root.left = constructMaximumBinaryTree(nums, start, indexOfMax - 1);
+        root.right = constructMaximumBinaryTree(nums, indexOfMax + 1, end);
         return root;
     }
 }
