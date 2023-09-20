@@ -21,20 +21,18 @@ class Solution {
         return buildTree(preorder, inorder, 0, preorder.length - 1, 0, inorder.length - 1);
     }
 
-    public TreeNode buildTree(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd) {
-        if (preStart > preEnd) {
+    private TreeNode buildTree(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd) {
+        if (preStart > preEnd || inStart > inEnd) {
             return null;
         }
         TreeNode root = new TreeNode(preorder[preStart]);
+        int leftTreeSize = 0;
         int i = inStart;
-        for (;i < inEnd; i++) {
-            if (inorder[i] == preorder[preStart]) {
-                break;
-            }
+        while (inorder[i] != preorder[preStart]) {
+            i++;
+            leftTreeSize++;
         }
-        int leftTreeSize = i - inStart;
-        int rightTreeSzie = inEnd - i;
-        root.left = buildTree(preorder, inorder, preStart + 1, preStart + leftTreeSize, inStart, i - 1);
+        root.left = buildTree(preorder, inorder, preStart + 1, preEnd + leftTreeSize, inStart, i - 1);
         root.right = buildTree(preorder, inorder, preStart + leftTreeSize + 1, preEnd, i + 1, inEnd);
         return root;
     }
