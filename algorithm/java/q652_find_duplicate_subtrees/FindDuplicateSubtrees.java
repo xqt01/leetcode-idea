@@ -18,27 +18,28 @@ public class FindDuplicateSubtrees {}
  */
 class Solution {
 
-    Map<String, Integer> map = new HashMap<>();
-    List<TreeNode> result = new LinkedList<>();
-
+    List<TreeNode> res = new LinkedList<>();
+    Map<String, Integer> countMap = new HashMap<>();
+    
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         find(root);
-        return result;
+        return res;
     }
 
-    public String find(TreeNode root) {
+    private String find(TreeNode root) {
         if (root == null) {
-            return "#";
+            return "null";
         }
-        String left = find(root.left);
-        String right = find(root.right);
-        String tree = root.val + "," + left + "," + right + ",";
-        if (map.get(tree) == null) {
-            map.put(tree, 1);
-        } else if (map.get(tree) == 1){
-            map.put(tree, 2);
-            result.add(root);
+        String leftVal = find(root.left);
+        String rightVal = find(root.right);
+        String encodeSubTree = root.val + "#" + leftVal + "#" + rightVal;
+        Integer count = countMap.get(encodeSubTree);
+        if (count == null) {
+            countMap.put(encodeSubTree, 1);
+        } else if (count == 1) {
+            countMap.put(encodeSubTree, 2);
+            res.add(root);
         }
-        return tree;
+        return encodeSubTree;
     }
 }
